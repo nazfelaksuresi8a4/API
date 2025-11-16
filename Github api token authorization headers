@@ -1,0 +1,13 @@
+import requests 
+
+token = 'your_token'
+user = 'nazfelaksuresi8a4'
+api = 'https://api.github.com/users/' + user
+
+headers = {
+    'Authorization': token
+}
+
+response = requests.get(api,headers=headers)
+
+print(response.json())
